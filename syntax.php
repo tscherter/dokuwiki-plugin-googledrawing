@@ -6,14 +6,7 @@
  * @author  Linus Brimstedt <linus@brimstedt.se>
  */
 
-// must be run within Dokuwiki
-if (!defined('DOKU_INC')) die();
-
-if (!defined('DOKU_LF')) define('DOKU_LF', "\n");
-if (!defined('DOKU_TAB')) define('DOKU_TAB', "\t");
-if (!defined('DOKU_PLUGIN')) define('DOKU_PLUGIN',DOKU_INC.'lib/plugins/');
-
-require_once DOKU_PLUGIN.'syntax.php';
+use dokuwiki\Extension\SyntaxPlugin;
 
 class syntax_plugin_googledrawing extends DokuWiki_Syntax_Plugin {
     public function getType() {
